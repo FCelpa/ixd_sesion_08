@@ -18,7 +18,9 @@ h2 {
     color: white;
 }
 
-
+p {
+    text-align: justify;
+}
 
 h1,
 h2,
