@@ -1,0 +1,39 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+
+:root {
+    --bs-body-font-family: "Source Sans Pro", sans-serif;
+    --bs-body-font-size: 0.9rem;
+    --bs-body-font-weight: 300;
+
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-weight: 500;
+}
+
+#fondo-con-imagen {
+    height: 70vh;
+    background-image: url("img/perchero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

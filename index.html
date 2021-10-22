@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <link href="style.css" rel="stylesheet" />
+        <title>Evaluación Nº1</title>
+    </head>
+    <body>
+        <nav class="fixed-top container">
+            <div class="row pt-2">
+                <div class="col">
+                    <h3 class="fs-6 d-flex justify-content-between align-items-center"><span>Evaluación</span> <span>Nº1</span></h3>
+                </div>
+            </div>
+        </nav>
+        <header class="container-fluid" id="fondo-con-imagen">
+            <div class="row h-100">
+                <div class="div text-center my-auto">
+                    <h1>El Fast-Fashion en el Mundo</h1>
+                    <h2>Una de las industrias más contaminantes</h2>
+                </div>
+            </div>
+        </header>
+        <section class="container py-3">
+            <div class="row py-4">
+                <div class="col-sm-10 col-md-8 mx-auto">
+                    <p>Cada año se usan, aproximadamente, 70 millones de barriles de petróleo para el proceso de confección de ropa en el mundo. La fibra tarda 200 años en descomponerse. El agua que se ocupa para producir solo una prenda es la misma cantidad que bebe un ser humano entre 10 y 20 años. Al año, en el planeta se producen 62 millones de toneladas de ropa debido al fast fashion, la moda del comprar, lucir y botar. El 85 % de estas prendas terminan en vertederos y basurales produciendo más contaminación del aire y el suelo. En Chile, el fenómeno no es una excepción.</p>
+
+                    <canvas id="misBarritas" width="100" height="70" class="my-5"></canvas>
+                    
+                    <p>La industria de la moda lidera los índices de contaminación ambiental a nivel global, después de la industria petrolera. La ropa que compras y usas todos los días equivale al 5 % del comercio mundial de productos de manufactura. Es la cuarta industria más representativa, alcanzando más de 655 billones de dólares en exportaciones por año. El impacto de la industria textil es tan alto que produce grandes niveles de contaminación medioambiental en todo su proceso de creación productiva. Según la Organización de Naciones Unidas (ONU), provoca el 10 % de las emisiones de carbono en el mundo y el 20 % de las aguas residuales. Es decir, las emisiones más altas que todos los vuelos internacionales y los barcos de carga combinados en un año. </p>
+                    
+        
+
+                    <svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                        <g id="line">
+                            <circle cx="36" cy="36" r="28" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M49.4394,11.4301C48.9012,12.3361,47.7952,13.5726,47,14c-1.2452,0.6692-1.904,0.2672-3,1c-1.2689,0.8484-1.2095,1.9379-2,2 c-0.8018,0.063-0.6879-1.993-1-3c-0.4521-1.4585-0.2307-1.5267-1-2c-1.0834-0.6665-3.2121-1.0502-5,0 c-0.7094,0.4167-0.7506,0.682-3,4c-1.7096,2.5218-2.188,3.1093-2,4c0.1989,0.9419,0.0427,1.7474,1,2 c1.1873,0.3132,1.3661-0.2722,2-1c1.3282-1.525,2.3581-3.7828,3-4c0.5713-0.1933,2.0656,1.3495,2,3c-0.0463,1.1654-0.852,1.922-2,3 c-0.7417,0.6965-2.875,1.5-6,2c-1.719,0.275-1.4083,0.8524-2.0625,1.5938c-0.8427,0.955-0.4615,2.1691-1.2812,3.3125 c-1.0252,1.43-3.4727,1.7917-3.6564,2.7188C22.8432,33.4154,24.9604,33.9845,26,34c0.8505,0.0127,1.0644-0.7721,3-2 c0.7408-0.47,1.75-1.2812,2.6875-1.25c0.5041,0.0168,1.8289,0.2852,2.3438,0.7188c0.5938,0.5-0.1562,1.8438-0.4062,3.1562 s-2.8976,1.8646-3.8542,2.0208c-1.5737,0.257-4.1439-0.5228-5.6042,0.9375c-1,1-1.1155,1.766-1.1667,3.4167 c-0.0129,0.4172,0.937,3.0323,2,4c1.1442,1.0416,2.2939-0.8356,4,0c1.7456,0.8549,2.493,2.7288,3,4 c0.5078,1.2731,0.1756,1.1679,1,5c0.4146,1.9271,0.3191,1.1194,1,4c0.5632,2.3826,0.5889,2.7678,1,3 c1.1732,0.6628,3.8997-0.8162,5-3c0.6895-1.3683,0.2111-1.9625,1-5c0.3928-1.5123,0.5892-2.2685,1-3 c1.7332-3.0861,4.8828-3.1256,5-5c0.0802-1.2824-1.3573-1.8515-1-3c0.3421-1.0997,1.8099-1.0603,2-2 c0.2579-1.2752-2.2492-2.316-2-3c0.2822-0.7746,4.0696-1.0098,6,1c0.6397,0.666,0.4982,0.9775,2,4c1.3839,2.7851,1.7637,3.0431,2,3 c0.4287-0.0782,0.3223-1.1355,1-3c0.3243-0.8922,1.0927-3.0062,2-3c0.6247,0.0043,0.7386,1.0097,2,2 c0.7103,0.5576,1.7908,0.8806,2.3474,1.0378C63.7747,40.0932,64,38.0729,64,36c0-10.6315-5.9252-19.8791-14.6535-24.6206"/>
+                        </g>
+                    </svg>
+
+
+                    <p>
+                        Según el estudio Pulse of the Fashion Industry de 2017, si este modelo de producción no se rediseña, en 2030 el volumen de ropa producida <strong>subirá un 50 %.</strong> Y por la cantidad de consumo innecesario, se estima que el volumen de desechos generados subirá un 63 %; esto es 102 billones de toneladas de ropa por año, lo que representa una montaña de 500 billones de poleras. Las emisiones de CO2 se incrementarían en un 60%, donde las industrias textiles llegarían a liberan cerca de 2,8 billones por año, lo que equivale a la emanaciones de la conducción de 230 millones de autos por un año, suponiendo patrones de conducción promedio. </p>
+                        
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/img_1.jpg" class="d-block w-100" alt="img_1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/img_2.jpg" class="d-block w-100" alt="img_2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/img_3.jpg" class="d-block w-100" alt="img_3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+
+                        <p>Ante la presión de las cifras anteriores, Alejandra Cuevas asegura estar absolutamente convencida de que es el desarrollo tecnológico y científico va a entregar las herramientas necesarias para disminuir el impacto ambiental de esta industria. Pero cree, en paralelo, que se hace absolutamente necesario un cambio del modelo actual de fast fashion  y también un cambio en la forma en cómo consumimos y desechamos, no solo ropa, sino todo hoy en día. “Sin ese cambio de raíz, no es posible una transformación radical y urgente“, cierra Cuevas. 
+                    </p>
+                    <h6> Fuente: <a href="https://pe.fashionnetwork.com/news/La-industria-de-la-moda-es-sensible-a-la-sostenibiildad-pero-se-muestra-reticente-a-los-cambios,1264180.html">fashionnetwork.com</a>;<a href="http://www.doble-espacio.uchile.cl/2019/10/02/del-maniqui-a-la-basura-el-alto-impacto-ambiental-de-la-moda-desechable/">doble-espacio.uchile.cl</a><h6>
+
+                </div>
+            </div>
+        </section>
+        <footer class="container border-top">
+            <div class="row pt-3">
+                <div class="col">
+            
+                    <p class="d-flex justify-content-between align-items-center small"><a href="https://github.com/FCelpa">Fernanda Celpa</a> <a href="https://github.com/profesorfaco/interaccion">AUD5V0010</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    </body>
+</html>
